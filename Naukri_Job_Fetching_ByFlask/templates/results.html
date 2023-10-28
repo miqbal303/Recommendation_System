@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results for {{ search_query }}</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Results for "{{ search_query }}"</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Job Titles</th>
+                <th>Company Names</th>
+                <th>Experience Required</th>
+                <th>Package Details</th>
+                <th>Locations</th>
+                <th>Skills</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for index, row in data.iterrows() %}
+            <tr>
+                <td>{{ row['Job Titles'] }}</td>
+                <td>{{ row['Company Names'] }}</td>
+                <td>{{ row['Experience Required'] }}</td>
+                <td>{{ row['Package Details'] }}</td>
+                <td>{{ row['Locations'] }}</td>
+                <td>{{ row['Skills'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
