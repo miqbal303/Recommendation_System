@@ -8,7 +8,7 @@ Dataset Link:- [Job Postings Dataset from Naukri.com](https://www.kaggle.com/dat
 
 Fetching Data From Naukri.com using selenium and python
 
-[![Video 1](http://img.youtube.com/vi/yywwOfbdcew/0.jpg)](http://www.youtube.com/watch?v=yywwOfbdcew)
+[!Video 1](http://www.youtube.com/watch?v=yywwOfbdcew)
 
 Making a Job Recommendation system
 
